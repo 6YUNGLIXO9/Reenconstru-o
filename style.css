@@ -7,7 +7,7 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-image: linear-gradient(#891717,#ff0101 );
+background-image: background-color(#494c4e  );
 color: white;
 width: 100%;
 padding: 20px;
@@ -15,7 +15,7 @@ font-size: xx-large;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .cabecalho-itens{
-max-width: 1980px;
+max-width: 2900px;
 margin: 0 auto;
 display: flex;
 align-items: center;
@@ -93,7 +93,7 @@ justify-content: space-around;
 
 
 .escola{
-background-image: linear-gradient(#ff0101,#891717);
+background-image: background-color(#494c4e);
 color: white;
 display: flex;
 justify-content:center;
@@ -156,7 +156,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #791616;;
+  background-color: #494c4e;
 }
 
 ul {
@@ -177,8 +177,8 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  border: 1px solid #911111;
-  background-color: #8e1616;
+  border: 1px solid #494c4e;
+  background-color: #494c4e;
 }
 
 ul {
