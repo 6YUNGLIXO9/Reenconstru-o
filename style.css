@@ -7,21 +7,19 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-image: background-color(#494c4e  );
+background-color: #424e61;
 color: white;
 width: 100%;
 padding: 20px;
-font-size: xx-large;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .cabecalho-itens{
-max-width: 2900px;
+max-width: 1980px;
 margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho_imagem{
+.cabecalho-imagem{
 width: 10%;
 display: flex;
 justify-content: flex-start;
@@ -34,64 +32,58 @@ width: 50%;
 font: 30px;
 }
 .sociais{
+ max-width: 3000px;
+  margin: 0 auto;
+  display: center;
+  justify-content: center;
+  align-items: center; 
+}
+.banner1 img {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+.banner1{ 
+ max-width: 2015px;  
 display: flex;
-justify-content: flex-end;
-max-width: 2900;
-padding-right: 30px;
+justify-content: center; 
 }
-.banner1{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-banner1 img{
-    width: 100%;
-    max-width: 100%;
-    display: block;
-}
-
 .estudante_titulo{
 padding: 50px;
 text-align: center;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 .estudante-nome{
 text-align: center;
 }
-.estudante-imagem{
-width: 200px;
+.estudante-imagem { width: 120px; height: 120px; object-fit: contain;
 }
-
+.estudante-icone {
+  width: 24px;
+  height: 24;            
+  display: block;          
+  margin: 8px auto 0 auto;
+}
 .estudante{
 background-image: background-color(#faae43);
 padding: 24px 0;
 }
 
 .estudante.div{
-text-align: center;
-padding: 24px 0;
+display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;
+  padding: 24px 0;
 }
+
 .estudantes_todos{
 display: flex;
 justify-content: space-around;
 }
-
-.titulo-video {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20%;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    margin-bottom: 15px;
-
-}
-
-
 .escola{
-background-image: background-color(#494c4e);
-color: white;
+background-image: linear-gradient(#FEEC41,#4274D9);
+color: rgb(255, 255, 255);
 display: flex;
 justify-content:center;
 padding: 24px 0;
@@ -103,7 +95,7 @@ padding: 50px;
 text-align: center;
 }
 .logo_rodape{
-height: 180px;
+height: 80px;
 padding: 12px 0;
 
 }
@@ -113,73 +105,21 @@ color: #ffffff;
 text-decoration: none;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
 .titulo-video {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-size: 50px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 20px 0;    
 }
 
 .container-video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+  text-align: center;
 }
-
-.centralizacao {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #ffffff;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #494c4e;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-}
-
-ul li a.active {
-  background-color: #04AA6D;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  border: 1px solid #494c4e;
-  background-color: #494c4e;
-}
-
-ul {
-
-    font-size: 20px;
-}
-
