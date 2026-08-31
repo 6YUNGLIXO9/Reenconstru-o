@@ -124,13 +124,13 @@ text-decoration: none;
   text-align: center;
 }
 .navbar {
-  background-color: background-color(#1A1A1A);
+  background-color: background-color(#86cecb);
   overflow: hidden;
 }
 
 .navbar a {
   float: left;
-  color: #86cecb;
+  color: #1A1A1A;
   padding: 14px 16px;
   text-decoration: none;
 }
