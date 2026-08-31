@@ -124,17 +124,17 @@ text-decoration: none;
   text-align: center;
 }
 .navbar {
-  background-color: rgb(28, 158, 233);
+  background-color: background-color(#1A1A1A);
   overflow: hidden;
 }
 
 .navbar a {
   float: left;
-  color: white;
+  color: #86cecb;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  background-color:#1A1A1A;
+  background-color:#ff0045;
 }
