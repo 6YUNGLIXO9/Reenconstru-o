@@ -123,3 +123,18 @@ text-decoration: none;
 .container-video {
   text-align: center;
 }
+.navbar {
+  background-color: rgb(28, 158, 233);
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color:#1A1A1A;
+}
