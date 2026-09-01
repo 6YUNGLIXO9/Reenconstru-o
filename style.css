@@ -82,7 +82,7 @@ display: flex;
 justify-content: space-around;
 }
 .escola{
-background-image: background-color(#1a1a1a);
+background-color: background-color(#1a1a1a);
 color: white;
 display: flex;
 justify-content:center;
@@ -124,7 +124,7 @@ text-decoration: none;
   text-align: center;
 }
 .navbar {
-  background-color: #1a1a1a;
+  background-color: #1A1A1A;
   overflow: hidden;
 }
 
