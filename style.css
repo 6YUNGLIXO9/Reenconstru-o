@@ -56,7 +56,7 @@ text-align: center;
 .estudante-nome{
 text-align: center;
 }
-.estudante-imagem { width: 100px; height: 100px; object-fit: contain;
+.estudante-imagem { width: 150px; height: 150px; object-fit: contain;
 }
 .estudante-icone {
   width: 24px;
@@ -124,7 +124,7 @@ text-decoration: none;
   text-align: center;
 }
 .navbar {
-  background-color: background-color(#1A1A1A);
+  background-color: (#1A1A1A);
   overflow: hidden;
 }
 
