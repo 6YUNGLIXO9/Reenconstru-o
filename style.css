@@ -138,3 +138,33 @@ text-decoration: none;
 .navbar a:hover {
   background-color:#ff0045;
 }
+
+.sobre-mim {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 30px;
+}
+
+.texto-sobre-mim {
+width: 55%;
+}
+
+.texto-sobre-mim h2 {
+font-size: 30px;
+}
+
+.texto-sobre-mim p {
+font-size: 18px;
+}
+
+.imagem-sobre-mim {
+width: 35%;
+text-align: center;
+}
+
+.imagem-sobre-mim img {
+width: 250px;
+height: 250px;
+object-fit: cover;
+}
