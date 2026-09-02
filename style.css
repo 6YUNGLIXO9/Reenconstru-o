@@ -20,7 +20,7 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-width: 100px;  ;
+width: 300px; 
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -211,7 +211,7 @@ object-fit: cover;
 }
 
 .imagem-zico img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
