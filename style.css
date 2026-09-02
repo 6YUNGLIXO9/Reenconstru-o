@@ -169,3 +169,49 @@ height: 250px;
 object-fit: cover;
 }
 
+
+
+.parte-flamengo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.texto-flamengo {
+  width: 60%;
+}
+
+.imagem-flamengo {
+  width: 35%;
+  text-align: center;
+}
+
+.imagem-flamengo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.parte-zico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.texto-zico {
+  width: 60%;
+}
+
+.imagem-zico {
+  width: 35%;
+  text-align: center;
+}
+
+.imagem-zico img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
