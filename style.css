@@ -140,31 +140,22 @@ text-decoration: none;
 }
 
 .sobre-mim {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .texto-sobre-mim {
-width: 55%;
-}
-
-.texto-sobre-mim h2 {
-font-size: 30px;
-}
-
-.texto-sobre-mim p {
-font-size: 18px;
+  width: 65%;
 }
 
 .imagem-sobre-mim {
-width: 35%;
-text-align: center;
+  width: 30%;
+  text-align: center;
 }
 
 .imagem-sobre-mim img {
-width: 250px;
-height: 250px;
-object-fit: cover;
+  width: 250px;
+  height: 250px;
 }
