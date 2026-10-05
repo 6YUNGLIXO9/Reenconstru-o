@@ -215,3 +215,9 @@ object-fit: cover;
   height: 250px;
   object-fit: cover;
 }
+
+html, body {
+  min-height: 100%;
+  height: auto;
+  overflow-y: auto;
+}
