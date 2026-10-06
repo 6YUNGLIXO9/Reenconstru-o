@@ -93,7 +93,7 @@ export default function Game(p: { level: number; save: Save; onSave: (s: Save) =
   const lowHp = h ? h.hp / h.maxHp : 1;
 
   return (
-    <div className="relative h-full w-full bg-black">
+    <div className="relative min-h-screen w-full bg-black">
       <div ref={host} className="absolute inset-0" />
       {err && <div className="absolute inset-0 z-50 flex items-center justify-center bg-black p-8 text-center text-red-300">WebGL error: {err}<br /><Btn onClick={p.onExit}>{t('back')}</Btn></div>}
       {/* vinhetas */}
