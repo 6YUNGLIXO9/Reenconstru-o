@@ -1138,7 +1138,10 @@ export class Engine {
     if (c.hp <= 0) { c.hp = 0; c.dead = true; c.deadT = 0; A.sfx('die'); this.cb.msg('m_caska_down'); }
   }
   // ---------- snapshot/entrada de rede ----------
-  applyRemoteInput(d: any) { this.remoteInput = d; }
+  applyRemoteInput(d: any) {
+  this.remoteInput = d;
+  console.log("REMOTE INPUT:", d);
+}
   packP(x: number, z: number, fa: number, as: AS, hp: number, mhp: number, st: number, mst: number) {
     return { x: +x.toFixed(2), z: +z.toFixed(2), fa: +fa.toFixed(2), a: aIdx(as.atk), p: +as.p.toFixed(2), mv: +as.mv.toFixed(2), dg: +as.dodge.toFixed(2), hit: +as.hit.toFixed(2), dead: +as.dead.toFixed(2), stun: as.stun ? 1 : 0, blk: as.block ? 1 : 0, rage: as.rage ? 1 : 0, fly: as.fly ? 1 : 0, hp: Math.round(hp), mhp: Math.round(mhp), st: Math.round(st), mst: Math.round(mst) };
   }
