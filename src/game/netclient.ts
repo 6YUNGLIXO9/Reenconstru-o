@@ -94,6 +94,7 @@ export class NetClient {
   setPing(p: number) { this.ping = p; }
 
   sendLocalInput() {
+    console.log("PLAYER 2 SENDLOCALINPUT", this.keys, this.inputLocked, this.paused);
     if (this.inputLocked) { this.sendInput({ t: 'input', d: { mx: 0, mz: 0, run: false, yaw: +this.yaw.toFixed(2), block: false, light: false, heavy: false, dodge: false, special: false, interact: false } }); return; }
     const sy = Math.sin(this.yaw), cy = Math.cos(this.yaw);
     const ix = (this.down('right') ? 1 : 0) - (this.down('left') ? 1 : 0), iz = (this.down('fwd') ? 1 : 0) - (this.down('back') ? 1 : 0);
