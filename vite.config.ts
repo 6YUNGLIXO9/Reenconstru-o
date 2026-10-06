@@ -8,13 +8,29 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
 export default defineConfig({
   base: "/Reenconstru-o/",
-  plugins: [react(), tailwindcss(), viteSingleFile()],
+
+  plugins: [
+    react(),
+    tailwindcss(),
+    viteSingleFile(),
+  ],
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+    },
+  },
+
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        sobre: path.resolve(__dirname, "Sobre.html"),
+        flamengo: path.resolve(__dirname, "Flamengo.html"),
+        jogo: path.resolve(__dirname, "Jogo.html"),
+      },
     },
   },
 });
