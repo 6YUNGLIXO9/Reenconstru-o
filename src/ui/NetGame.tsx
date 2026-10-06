@@ -45,7 +45,16 @@ export default function NetGame(p: { role: 'host' | 'guest'; level: number; save
       } else {
         const sv = { ...p.save, armorEq: p.seed.armor, cloakEq: p.seed.cloak };
         console.log("PLAYER 2: iniciando NetClient");
-const c = new NetClient(host.current!, p.level, sv, (m) => net.send(m), setChud);
+const c = new NetClient(
+  host.current!,
+  p.level,
+  sv,
+  (m) => {
+    console.log("PLAYER 2 ENVIANDO:", m);
+    net.send(m);
+  },
+  setChud
+);
 console.log("PLAYER 2: NetClient criado");
         c.onPause = () => setMenu('main');
         cli.current = c; c.setMinimap(mini.current);
