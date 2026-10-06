@@ -78,7 +78,7 @@ export default function NetGame(p: { role: 'host' | 'guest'; level: number; save
   const waiting = !isHost && chud?.waiting;
 
   return (
-    <div className="relative h-full w-full bg-black">
+    <div className="relative min-h-screen w-full bg-black">
       <div ref={host} className="absolute inset-0" />
       {err && <div className="absolute inset-0 z-50 flex flex-col items-center justify-center gap-3 bg-black p-8 text-center text-red-300">WebGL: {err}<Btn onClick={p.onExit}>{t('back')}</Btn></div>}
       {(cine === 'intro' || cine === 'bossdown' || cine === 'eclipse') && <><div className="pointer-events-none absolute inset-x-0 top-0 h-[9%] bg-black" /><div className="pointer-events-none absolute inset-x-0 bottom-0 h-[9%] bg-black" /></>}
