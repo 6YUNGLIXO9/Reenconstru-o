@@ -67,7 +67,7 @@ export class Net {
   bind(c: DataConnection) {
     this.conn = c;
     c.on('open', () => { this.lastRecv = performance.now(); this.h.onPeer?.(true); });
-    c.on('data', (d: any) => { this.lastRecv = performance.now(); const m = d as NetMsg; if (m.t === 'ping') this.send({ t: 'pong', s: m.s }); else if (m.t === 'pong') this.ping = performance.now() - m.s; else this.h.onMsg?.(m); });
+    c.on('data', (d: any) => { console.log('REDE RECEBEU:', d); this.lastRecv = performance.now(); const m = d as NetMsg; if (m.t === 'ping') this.send({ t: 'pong', s: m.s }); else if (m.t === 'pong') this.ping = performance.now() - m.s; else this.h.onMsg?.(m); });
     c.on('close', () => { this.h.onPeer?.(false); this.h.onClose?.(); });
     c.on('error', () => { this.h.onPeer?.(false); });
   }
