@@ -48,7 +48,10 @@ export default function NetGame(p: { role: 'host' | 'guest'; level: number; save
         c.onPause = () => setMenu('main');
         cli.current = c; c.setMinimap(mini.current);
       }
-    } catch (e) { setErr(String(e)); }
+    } catch (e) {
+  console.error("ERRO AO INICIAR MULTIPLAYER:", e);
+  setErr(String(e));
+}
 
     net.h.onMsg = (m) => {
       if (m.t === 'input' && eng.current) eng.current.applyRemoteInput(m.d);
